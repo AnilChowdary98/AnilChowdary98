@@ -1,0 +1,66 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#101a2e"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+
+  <!-- subtle grid dots -->
+  <g fill="#22d3ee" opacity="0.08">
+    <circle cx="40" cy="40" r="2"/><circle cx="90" cy="40" r="2"/><circle cx="140" cy="40" r="2"/>
+    <circle cx="40" cy="90" r="2"/><circle cx="90" cy="90" r="2"/><circle cx="140" cy="90" r="2"/>
+    <circle cx="40" cy="140" r="2"/><circle cx="90" cy="140" r="2"/><circle cx="140" cy="140" r="2"/>
+    <circle cx="40" cy="190" r="2"/><circle cx="90" cy="190" r="2"/><circle cx="140" cy="190" r="2"/>
+    <circle cx="40" cy="240" r="2"/><circle cx="90" cy="240" r="2"/><circle cx="140" cy="240" r="2"/>
+  </g>
+
+  <!-- right side decorative bar chart -->
+  <g transform="translate(940,0)">
+    <rect x="0" y="190" width="26" height="70" rx="4" fill="url(#barGrad)" opacity="0.85"/>
+    <rect x="36" y="150" width="26" height="110" rx="4" fill="url(#barGrad)" opacity="0.9"/>
+    <rect x="72" y="110" width="26" height="150" rx="4" fill="url(#barGrad)"/>
+    <rect x="108" y="160" width="26" height="100" rx="4" fill="url(#barGrad)" opacity="0.85"/>
+    <rect x="144" y="80" width="26" height="180" rx="4" fill="url(#barGrad)"/>
+    <rect x="180" y="130" width="26" height="130" rx="4" fill="url(#barGrad)" opacity="0.9"/>
+
+    <!-- trend line across bars -->
+    <polyline points="13,200 49,160 85,120 121,170 157,90 193,140"
+      fill="none" stroke="url(#lineGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="13" cy="200" r="4" fill="#fbbf24"/>
+    <circle cx="49" cy="160" r="4" fill="#fbbf24"/>
+    <circle cx="85" cy="120" r="4" fill="#fbbf24"/>
+    <circle cx="121" cy="170" r="4" fill="#fbbf24"/>
+    <circle cx="157" cy="90" r="4" fill="#fbbf24"/>
+    <circle cx="193" cy="140" r="4" fill="#fbbf24"/>
+  </g>
+
+  <!-- thin accent rule -->
+  <rect x="60" y="225" width="160" height="4" rx="2" fill="url(#lineGrad)"/>
+
+  <!-- name -->
+  <text x="60" y="140" font-family="Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#f8fafc">
+    Penikalapati Anil Chowdary
+  </text>
+
+  <!-- role -->
+  <text x="60" y="180" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="400" fill="#94a3b8">
+    Aspiring Data Analyst &#183; Python &#183; SQL &#183; Power BI &#183; Tableau
+  </text>
+
+  <!-- tagline -->
+  <text x="60" y="260" font-family="Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#64748b">
+    Turning raw data into actionable insights
+  </text>
+</svg>
